@@ -1,17 +1,38 @@
 // Home Content
 
 .home {
-
   .intro {
+    // border: 2rem solid black;
 
+    figure.main-img-header {
+      img {
+        max-width:100%;
+      }
+      display: flex;
+      // flex-wrap: wrap;
+      margin: 20px 2.5%;
+      // border-radius: 20px;
+      max-width:100%;
+      max-height:100%;
+      // display: none;//
+      // border: 2rem solid black;
+      
+    }
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+    @media @phone {
+      figure.main-img-header {
+        width: 95%;
+        display: flex;
+        // wr?
+        // display: none;
+      }
+    }
   }
 
   .space-images {
@@ -24,9 +45,37 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 100%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
+      }
+    }
+    @media @phone {
+      img.sky {
+        display: none;
+      }
+      img.launch {
+        display: none;
+      }
     }
   }
+  @media @phone {
+    .visit-planets {
+      display: flex;
+      flex-direction: column;
+      order: 2;
+    }
+    img.launch {
+      padding: 1rem;
+      margin: 1rem;
 
+      display: flex;
+      flex-direction: column;
+      order: 3;
+    }
+  }
   .visit-planets {
     padding: 15px;
 
@@ -58,18 +107,56 @@
       }
 
       .btn {
+        .buttonMixin(@btn-bg-color, @buttonMarginSet);
+        &:hover {
+          background: #ffffff;
+           
+
+          border: 1rem solid #ffffff;
+          color: @btn-bg-color;
+        }
+        @media @phone {
+          // width: 80%;
+          .buttonMixinPhone(@btn-bg-color, @buttonMarginSet);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
+      @media @phone {
+        width: 100%;
+      }
+    }
+    @media @phone {
+      width: 100%;
+      margin-top: 0;
+      border-top: 1px solid @main-border-color;
+      padding: 20px 0px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .walk-text {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        width: 100%;
+        padding: 1rem;
+      }
+      .walk.walk-img {
+        width: 100%;
+        display: flex;
+        order: 1;
+      }
     }
   }
-}// home
+} // home

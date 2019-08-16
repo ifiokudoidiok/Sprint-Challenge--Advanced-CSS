@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive website uses distinct layouts for multiple screen sizes, the layout mainly depends on the screen size os the users; so with each of these sizes in mind a layout would have to be designed for it.
+While Fully Responsive websites combine features of fixed, adaptive, and fluid websites together into one seamless experience. It (responsive) adapts to the size of the screen no matter what the target device screen size isusing fluid layouts.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first simply means the developer builds while making mobile users thier number one priority, that is, the mobile designs are built first. Usually takes into consideration Min-width in the media queries
+While desktop first means the developer builds while making desktop users their number one priority, that is, the desktop view of the site is built first. Usually takes into consideration Max-width in the media queries  
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Usually default font-size of the browser is 16px. Setting font-size: 100% will make 1rem = 16px. But it will make calculations a little difficult. A better way is to set font-size: 62.5%. Because 62.5% of 16px is 10px. Which makes 1rem = 10px.
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessors simply put , is a more robust syntax of CSS written in a different language. This language is in turn compiled and converted in to normal CSS.
+In a more diagramatic way, taking LESS into consideration:
+Syntax (LESS) -> Compiler (JavaScript) -> CSS
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+My favourite concept is the Parametirc Mixins because it really helps to reduce writing the same set of styles all over your code. Nesting on the other hand can get tricky, especially when you are not specific enough for the particular element to be captured.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,11 +65,11 @@ Follow these steps to set up your project:
 
 ### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Add your project manager as collaborator on Github.
+- [x] Create a forked copy of this project.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
