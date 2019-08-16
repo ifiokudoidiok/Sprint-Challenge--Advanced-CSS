@@ -160,6 +160,12 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+  }
+}
 nav {
   width: 78%;
   margin: 0 auto;
@@ -198,6 +204,7 @@ nav a {
   }
   nav a {
     width: 17%;
+    padding-bottom: 1.5rem;
   }
 }
 footer {
@@ -216,6 +223,11 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 99%;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -226,6 +238,36 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images img.sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  .home img.launch {
+    display: flex;
+    flex-direction: column;
+    order: 3;
+  }
+  .home img.launch {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -269,6 +311,21 @@ footer {
   border: 1rem solid #ffffff;
   color: #22283A;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    border: 1rem solid #22283A;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    background: #22283A;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -277,4 +334,33 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    width: 100%;
+    margin-top: 0;
+    border-top: 1px solid #dee2e6;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home .walk .walk-text {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    width: 90%;
+    padding: 1rem;
+  }
+  .home .walk .walk.walk-img {
+    width: 100%;
+    display: flex;
+    order: 1;
+  }
 }
