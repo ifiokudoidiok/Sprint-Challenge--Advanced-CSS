@@ -134,16 +134,16 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -173,7 +173,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 nav .main-txt {
   display: flex;
@@ -196,7 +196,7 @@ nav a {
   order: 2;
   text-decoration: none;
   font-size: 1.5rem;
-  color: #454A59;
+  color: #454a59;
 }
 @media (max-width: 500px) {
   nav {
@@ -207,8 +207,14 @@ nav a {
     padding-bottom: 1.5rem;
   }
 }
+nav:hover {
+  transform: scale(1.125);
+  transition: 0.3s ease-in;
+  background-color: black;
+  color: #22283a;
+}
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -295,10 +301,10 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  border: 1rem solid #22283A;
+  border: 1rem solid #22283a;
   border-radius: 0.5rem;
   color: #ffffff;
-  background: #22283A;
+  background: #22283a;
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
@@ -309,14 +315,14 @@ footer {
 .home .walk .walk-text .btn:hover {
   background: #ffffff;
   border: 1rem solid #ffffff;
-  color: #22283A;
+  color: #22283a;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    border: 2.5rem solid #22283A;
+    border: 2.5rem solid #22283a;
     border-radius: 0.5rem;
     color: #ffffff;
-    background: #22283A;
+    background: #22283a;
     font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
