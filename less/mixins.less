@@ -1,1 +1,29 @@
 // Mixins Here
+.setFlexAndBorderInNav() {
+    display: flex;
+    border: 0.25rem solid rgba(25, 26, 25, 0);
+  }
+
+.flexToCenter() {
+    justify-content: center;
+}
+
+.buttonMixin(@btn-bg-color, @buttonMarginSet) {
+    
+    border: 1rem solid @btn-bg-color;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    background: @btn-bg-color;
+    font-size:1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: @buttonMarginSet;
+    // padding: 0.5em;
+    width: 10rem;
+    
+}
+// .buttonify-paragraph(@gaga) {
+//     margin: 1em 0;
+//     padding: 0.5em;
+//     border: 0.25em solid @gaga;
+//   }
